@@ -70,7 +70,7 @@ https://publicapi.digiboxx.com/assets/dgb_file_details/
 payloads:
 ----------
 {"userToken":"SBovtRDTwcuj78IfBeQZdjEqvEsEBz6vxZ97rZXJz-8","file_id": "371986"}
-
+Ashish: New changes from Ashish in the current WIP Branch
 Asset List
 ----------------------
 https://publicapi.digiboxx.com/assets/asset_list/
