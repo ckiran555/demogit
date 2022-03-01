@@ -1,0 +1,79 @@
+Note:---- As of Now we have not putted jiostb part inside our db so dont check with tp_identifier
+
+Encrypt_string
+--------------
+https://publicapi.digiboxx.com/login/encrypt_string/
+
+payloads:   {"tp_identifier":"jiostb_123"}
+
+Create Account
+--------------------
+https://publicapi.digiboxx.com/account/create_account/
+
+payloads(dont use tpidentifier)
+---------
+{"full_name":"amar","digispace":"Amar","email":"zzzz@cccc.com","twofactor_enabled":"0","accept_tos":"1","mobile":"7008335274"}
+{"tp_identifier":"jiostb_123","full_name":"amar","digispace":"Amar","email":"zzzz@cccc.com","twofactor_enabled":"0","accept_tos":"1","mobile":"7008335274"}
+
+User_login(dont use tpidentifier)
+--------------------
+https://publicapi.digiboxx.com/login/user_login/
+
+{"digispace":"Amar","email":"zzzz@cccc.com","password":"XXXXXXXX"}
+{"digispace":"Amar","email":"zzzz@cccc.com","password":"XXXXXXXX","otp_data":"000000"}
+{"tp_identifier":"jiostb_123","digispace":"Amar","email":"zzzz@cccc.com","password":"XXXXXXXX"}
+{"tp_identifier":"jiostb_123","digispace":"Amar","email":"zzzz@cccc.com","password":"XXXXXXXX","otp_data":"000000"}
+
+Forgot Digispace
+------------------
+https://publicapi.digiboxx.com/login/forgot_digispace_func/
+
+payloads
+----------
+to get otp  ==> {'email':'helloworld@yopmail.com','mobile':'9999999999'}
+submit_otp  ==> {'email':'helloworld@yopmail.com','mobile':'9999999999,'otp_data':'000000'}
+
+Forgot_Password
+----------------
+https://publicapi.digiboxx.com/login/forgot_password_func/
+
+Payloads
+--------
+to get otp ==>  {'email':'helloworld@yopmail.com','digispace':'nnnnnn'}
+submit_otp  == > {'email':'helloworld@yopmail.com','digispace':'nnnnnn','otp_data':'000000'}
+
+######### we can't check this for this tp_identifier needed
+
+Fitch Profile details(Profile)
+-------------------------------
+https://publicapitest.digiboxx.com/login/profile/
+
+Payloads:
+---------
+{"userToken":"ILUEmNQPS45iM5Yo97NjUZctzTlLYYqMkkpJfLB_VRE","tp_identifier":"jiostb_123"}
+
+######### we can't check this for this tp_identifier needed
+
+User_logout
+------------
+https://publicapi.digiboxx.com/login/user_logout/
+
+payloads:
+---------
+{"userToken":"L-QFry33HCuZGSbxEIR4EAKvwgBbKJZksEzpbPIomD0"}
+
+File_overview
+----------------
+https://publicapi.digiboxx.com/assets/dgb_file_details/
+
+payloads:
+----------
+{"userToken":"SBovtRDTwcuj78IfBeQZdjEqvEsEBz6vxZ97rZXJz-8","file_id": "371986"}
+
+Asset List
+----------------------
+https://publicapi.digiboxx.com/assets/asset_list/
+
+Payloads
+------------
+{"userToken":"SBovtRDTwcuj78IfBeQZdjEqvEsEBz6vxZ97rZXJz-8","type":"folder","folder_id":"0","page_no":"1"}
