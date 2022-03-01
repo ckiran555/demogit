@@ -28,6 +28,7 @@ Forgot Digispace
 ------------------
 https://publicapi.digiboxx.com/login/forgot_digispace_func/
 
+Shekhar: Commiting the change in WIP Branches as usual and all other changes
 payloads
 ----------
 to get otp  ==> {'email':'helloworld@yopmail.com','mobile':'9999999999'}
